@@ -1,0 +1,79 @@
+.rs{
+    color: white;
+    background: #001030;
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+}
+.rs-profile{
+    padding: 40px 20px 20px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.rs-profile img{
+    width: 90px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 3px solid #077EFF;
+}
+.rs-profile h3{
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0px 5px;
+}
+.rs p{
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.rs hr{
+    border-color: #ffffff30;
+    margin: 20px 0px 15px;
+}
+.rs-media{
+    padding: 0 20px;
+}
+.rs-media div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+.rs-media div img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+.rs-media div img:hover{
+    transform: scale(1.05);
+}
+.rs button{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #077eff;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.rs button:hover{
+    background: #0066cc;
+}

@@ -1,0 +1,58 @@
+.Profile{
+    min-height: 100vh;
+    background: url(/background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Profile-container{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 700px;
+    border-radius: 10px;
+
+}
+.Profile-pic{
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+.Profile form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+.Profile form h3{
+    font-weight: 500;
+}
+.Profile label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: grey;
+    cursor: pointer;
+}
+.Profile label img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.Profile input,textarea{
+    padding: 10px;
+    min-width: 300px;
+    border: 1px solid #c9c9c9;
+    outline-color: #077eff;
+}
+.Profile form button{
+    border: none;
+    color: white;
+    background-color: #077eff;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
