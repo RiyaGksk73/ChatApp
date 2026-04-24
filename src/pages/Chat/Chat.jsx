@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './Chat.css'
 import LeftSideBar from '../../components/LeftSideBar/LeftSideBar'
 import ChatBox from '../../components/ChatBox/ChatBox'
-import RightSidebar from '../../components/RightSidebar'
+import RightSidebar from '../../components/RightSideBar/RightSidebar'
 import { AppContext } from '../../context/AppContext'
 
 const Chat = () => {
