@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
-import './RightSideBar.css'
+import './RightSidebar.css'
 import assets from '../../assets/assets'
 import { logout } from '../../config/firebase'
 import { AppContext } from '../../context/AppContext'
 
-const RightSideBar = () => {
+const RightSidebar = () => {
 
   const { chatUser, messages } = useContext(AppContext);
   const [msgImages, setMsgImages] = useState([]);
@@ -56,4 +56,4 @@ const RightSideBar = () => {
     )
 }
 
-export default RightSideBar
+export default RightSidebar
