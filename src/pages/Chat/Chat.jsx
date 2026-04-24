@@ -7,27 +7,26 @@ import { AppContext } from '../../context/AppContext'
 
 const Chat = () => {
 
-const { chatData, userData } = useContext(AppContext);
-const [loading, setLoading] = useState(true)
+  const { chatData, userData } = useContext(AppContext);
+  const [loading, setLoading] = useState(true)
 
-useEffect(()=>{
-  if (chatData && userData) {
-    setLoading(false);
-  }
-}, [chatData, userData])
+  useEffect(() => {
+    if (chatData && userData) {
+      setLoading(false);
+    }
+  }, [chatData, userData])
 
   return (
     <div className='Chat'>
-    {
-loading
-?<p className='Loading'>Loading...</p>
-: <div className='Chat-container'>
-        <LeftSideBar />
-        <ChatBox />
-        <RightSidebar />
-        </div>  
-    }
-    
+      {
+        loading
+          ? <p className='Loading'>Loading...</p>
+          : <div className='Chat-container'>
+              <LeftSideBar />
+              <ChatBox />
+              <RightSidebar />
+            </div>
+      }
     </div>
   )
 }
