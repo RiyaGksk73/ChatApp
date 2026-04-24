@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './Chat.css'
 import LeftSideBar from '../../components/LeftSideBar/LeftSideBar'
 import ChatBox from '../../components/ChatBox/ChatBox'
-import RightSideBar from '../../components/RightSideBar/RightSideBar'
+import RightSidebar from '../../components/RightSidebar/RightSidebar'
 import { AppContext } from '../../context/AppContext'
 
 const Chat = () => {
@@ -24,7 +24,7 @@ loading
 : <div className='Chat-container'>
         <LeftSideBar />
         <ChatBox />
-        <RightSideBar />
+        <RightSidebar />
         </div>  
     }
     
