@@ -6,29 +6,30 @@ import RightSidebar from '../../components/RightSideBar/RightSidebar'
 import { AppContext } from '../../context/AppContext'
 
 const Chat = () => {
-
   const { chatData, userData } = useContext(AppContext);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (chatData && userData) {
       setLoading(false);
     }
-  }, [chatData, userData])
+  }, [chatData, userData]);
 
   return (
     <div className='Chat'>
       {
-        loading
-          ? <p className='Loading'>Loading...</p>
-          : <div className='Chat-container'>
-              <LeftSideBar />
-              <ChatBox />
-              <RightSidebar />
-            </div>
+        loading ? (
+          <p className='Loading'>Loading...</p>
+        ) : (
+          <div className='Chat-container'>
+            <LeftSideBar />
+            <ChatBox />
+            <RightSidebar />
+          </div>
+        )
       }
     </div>
-  )
-}
+  );
+};
 
-export default Chat
+export default Chat;
